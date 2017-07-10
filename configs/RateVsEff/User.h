@@ -15,9 +15,6 @@ namespace RateVsEff_cfg {
     
     if (USER == "AWB") {
 
-<<<<<<< HEAD
-      IN_DIR_NAME = "/afs/cern.ch/work/a/abrinke1/public/EMTF/PtAssign2017";
-=======
       const int MODE = 14;  // Specify one mode in particular to look at
 
       IN_DIR_NAME   = "/afs/cern.ch/work/a/abrinke1/public/EMTF/PtAssign2017/files";
@@ -25,7 +22,6 @@ namespace RateVsEff_cfg {
       out_str.Form("RateVsEff_mode_%d_eta_1p2_2p5", MODE);
       OUT_FILE_NAME = out_str;
 
->>>>>>> upstream/master
       EFF_CUTS    = {90};
       TURN_ONS    = {8, 16, 24};
 
@@ -46,7 +42,6 @@ namespace RateVsEff_cfg {
       EMTF15.trg_pt_scale = 1./1.4;  // Had been scaled up by 1.4 from original regression 
       EMTF15.color        = 1;  // kBlack 
 
-<<<<<<< HEAD
       PtAlgo MVA1;
       MVA1.in_file_name = "PtRegression_Apr_2017_04_20_MODE_15_noBitCompr.root";
       MVA1.fact_name    = "f_MODE_15_logPtTarg_invPtWgt_noBitCompr";
@@ -132,7 +127,8 @@ namespace RateVsEff_cfg {
       /* ALGOS.push_back(MVA5); */
       /* ALGOS.push_back(MVA6); */
       /* ALGOS.push_back(MVA7); */
-=======
+
+
       PtAlgo EMTF = EMTF15;
       ID_str.Form("EMTF%d", MODE);
       alias_str.Form("EMTF mode %d", MODE);
@@ -229,7 +225,6 @@ namespace RateVsEff_cfg {
       ALGOS.push_back(BDT_invPt_Sq);
       ALGOS.push_back(BDT_invPt_Sq_match);
       ALGOS.push_back(BDT_invPt_Sq_RPC);
->>>>>>> upstream/master
 
     } // End conditional: if (USER == "AWB")
 
