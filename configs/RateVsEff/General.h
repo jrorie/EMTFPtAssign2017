@@ -7,14 +7,9 @@ const int MAX_EVT    =       -1;  // Number of events to process
 const int REPORT_EVT =   100000;  // Report every Nth event during processing
 
 // *** Muon / track settings *** //
-<<<<<<< HEAD
-const double ETAMIN  = 1.24;  // Minimum GEN / trigger eta to consider
-const double ETAMAX  = 2.40;  // Maximum GEN / trigger eta to consider
-=======
 const double ETAMIN  = 1.20;  // Minimum GEN / trigger eta to consider
 const double ETAMAX  = 2.50;  // Maximum GEN / trigger eta to consider
 const int    ETABINS =   26;  // Number of bins in rate plots
->>>>>>> upstream/master
 
 // *** Rate plot settings *** //
 const double PTMIN   =  1.0;  // Minimum pT
